@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 20px;
+    color: gray;
+}
+
+.plan{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+header{
+   display: flex;
+   justify-content: space-around;
+    margin-top: 50px;
+    background-color: purple;
+    padding: 70px;
+}
+
+header div h1{
+    width: 35%;
+    font-size: 40px;
+}
+
+header div p{
+    width: 37%;
+    margin-top: 20px;
+}
+
+header div button a{
+    text-decoration: none;
+    color: white;
+}
+
+header div button{
+    margin-top: 30px;
+    padding: 7px;
+    border: 2px solid white;
+    background-color: purple;
+}
+
+main{
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+main .boy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+} 
+
+.boy div h3{
+    margin-top: 20px;
+}
+
+.boy div p{
+    margin-top: 20px;
+    width: 65%;
+    color: gray;
+}
+
+section{
+    margin-top: 150px;
+}
+
+section div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid purple;
+    padding: 50px;
+    background-color: purple;
+}
+
+section div h1{
+    width: 19%;
+    color: white;
+}
+
+section div button a{
+    text-decoration: none;
+    color: white;
+}
+
+section div button{
+    padding: 8px;
+    border: 2px solid white;
+    background-color: purple;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: wheat;
+}
+
+footer .pull{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .pull li{
+    list-style: none;
+    display: inline;
+}
+
+footer .pull a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer .she{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .she a{
+    text-decoration: none;
+}
+
+footer .she h5{
+    margin-top: 10px;
+}
+
+footer .she .lol{
+    margin-bottom: 20px;
+}
+
+footer .pull img{
+    margin-left: 145px;
+}
+
+@media only screen and ( max-width:800px){
+   nav div ul{
+    display: none;
+   }
+   
+    header{
+        flex-direction: column;  
+    }
+
+    header div{
+        width: 250%;
+    }
+ 
+    main{
+        flex-direction: column;
+        width: 10%;
+    }
+
+    main .boy{
+        display:block;
+        justify-content: center;
+        align-items: center;
+        width: 150%;
+    }
+
+    main .boy div{
+        width: 200%;
+        margin-right: 0;
+    }
+
+    section div{
+        display: block;
+        justify-content: center;
+        width: 200%;
+    }
+
+    section div h1{
+        width: 30%;
+    }
+
+    section div button{
+        margin-top: 30px;
+    }
+
+    footer .pull{
+        display: block;
+    }
+
+    footer .pull a{
+        display: inline;
+    }
+ 
+    footer .she{
+        display: block;
+        margin-left: 150px;
+    }
+
+    footer .she div{
+        margin-top: 50px;
+    }
+    }
+
