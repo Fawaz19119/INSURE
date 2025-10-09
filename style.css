@@ -35,7 +35,7 @@ header{
    display: flex;
    justify-content: space-around;
     margin-top: 50px;
-    background-color: purple;
+    background-color: rgb(15, 15, 37);
     padding: 70px;
 }
 
@@ -58,7 +58,7 @@ header div button{
     margin-top: 30px;
     padding: 7px;
     border: 2px solid white;
-    background-color: purple;
+    background-color:rgb(15, 15, 37);
 }
 
 main{
@@ -91,9 +91,10 @@ section div{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid purple;
+    border: 2px solid rgb(15, 15, 37);
     padding: 50px;
-    background-color: purple;
+    background-color: rgb(15, 15, 37);
+    margin: 0 200px;
 }
 
 section div h1{
@@ -109,26 +110,30 @@ section div button a{
 section div button{
     padding: 8px;
     border: 2px solid white;
-    background-color: purple;
+    background-color: rgb(15, 15, 37);
 }
 
 footer{
     margin-top: 150px;
-    background-color: wheat;
+    background-color: rgb(231, 227, 222);
 }
 
-footer .pull{
+footer div .mumu{
+    margin-left: 100px;
+}
+
+footer .footer-link{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-footer .pull li{
+footer .footer-link li{
     list-style: none;
     display: inline;
 }
 
-footer .pull a{
+footer .footer-link a{
     text-decoration: none;
     margin: 10px;
 }
@@ -137,14 +142,20 @@ footer .she{
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 
 footer .she a{
     text-decoration: none;
+    color: black;
 }
 
 footer .she h5{
+    color: grey;
+}
+
+footer .she ul li{
+    display: block;
     margin-top: 10px;
 }
 
@@ -160,6 +171,11 @@ footer .pull img{
    nav div ul{
     display: none;
    }
+
+   nav div ul .plan{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
    
     header{
         flex-direction: column;  
@@ -167,54 +183,61 @@ footer .pull img{
 
     header div{
         width: 250%;
+        color: white;
+    }
+
+    header div button{
+        margin-top: 20px;
     }
  
     main{
-        flex-direction: column;
-        width: 10%;
+        margin: 0;
+        
+    }
+
+    main h1{
+        margin-top: 40px;
+        margin-left: 60px;
     }
 
     main .boy{
-        display:block;
-        justify-content: center;
-        align-items: center;
-        width: 150%;
+        flex-direction: column;
+        margin-left: 100px;
+        /* width: 150%; */
     }
 
-    main .boy div{
-        width: 200%;
-        margin-right: 0;
-    }
 
     section div{
-        display: block;
-        justify-content: center;
-        width: 200%;
+        flex-direction: column;
+        margin: 0 40px;
+    
     }
 
     section div h1{
-        width: 30%;
+        width: 100%;
     }
 
     section div button{
         margin-top: 30px;
     }
 
-    footer .pull{
-        display: block;
-    }
+    footer .footer-link{
+        flex-direction: column;
+    }    
 
-    footer .pull a{
-        display: inline;
+    footer .footer-link .mumu{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-right: 40px;
     }
  
     footer .she{
-        display: block;
-        margin-left: 150px;
+        flex-direction: column;
+        text-align: center;
+        /* margin-left: 150px; */
     }
-
-    footer .she div{
-        margin-top: 50px;
+    footer .she ul{
+        margin-top: 20px;
     }
-    }
+}
 
